@@ -155,7 +155,7 @@ For manually graded elements, we only guarantee time to submit for a regrade **I
 
 ### Instruction Home
 Please note, if you are viewing these instructions in your repository copy, it is possible for your local copy to be out of sync with the official instructions. 
-Double check instructions by going to: [HW 1 - Instructions](https://github.com/CS5008-khoury-lionelle/hw1/tree/main/instructions)
+Double check instructions by going to: [HW 1 - Instructions](https://github.com/CS5008-khoury-lionelle/hw01/tree/main/instructions)
 
 
 
