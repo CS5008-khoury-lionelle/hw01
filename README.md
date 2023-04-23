@@ -1,4 +1,4 @@
-# HW README
+# Homework 1: Setting things up!
 
 Name:
 
@@ -20,5 +20,19 @@ Did you use any external resources (you do not have to cite in class material)? 
 
 (Optional) How would you improve the assignment? 
 
-## Questions Answers (change to better heading)
+## Learning Questions
 
+* In C, do you use printf or print? 
+
+* What operating system do you use? 
+
+* What did you end up doing to get C working on your system?
+
+* Markdown is a common standard to format text, particularly due to the popularity of github. Take a moment to review a github guide or two, and then write a few basic examples of markdown in the 'markdown playground' section below. You need to include both code and some formatting content on the examples. Make sure to view this readme in browser (your github repo) to see how it renders. 
+
+* Computer science ends up becoming more "exploration" based as you progress. This assignment required a lot of exploration and learning the correct thing to setup / install - which is all unique based on your systems. This is common in the industry, even if it can be frustrating for a student just learning. 
+   * Reflect a bit on why that would be the case for computer science? Include in your reflection some "habits" you can develop to help better that process of exploration and learning. Please include at least a paragraph for this reflection.
+
+
+## Markdown Playground
+Include your markdown examples here.
