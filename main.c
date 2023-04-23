@@ -55,10 +55,10 @@ int main(int argc, char const *argv[])
 
     printf("Hello %s", name); // This is a function call, it calls the printf function, which prints the name variable to the command line
 
-    if(number > 21) {
-        printf("You are old enough to drink in the US"); // This is a function call, it calls the printf function, which prints the name variable to the command line
+    if(number > 21) { // C uses the basic conditions of >=, >, <=, <, ==, != (not equal to). For logical operators it uses && (and), || (or), ! (not)
+        printf("You are old enough to drink in the US"); // This is a function call, it calls the printf function, it needs double quoted strings
     } else {
-        printf("You are not old enough to drink in the US"); // This is a function call, it calls the printf function, which prints the name variable to the command line
+        printf("You are not old enough to drink in the US"); // This is a function call, it calls the printf function
     }
 
 
