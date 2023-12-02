@@ -5,13 +5,11 @@ For this homework, you are going to work on getting your development environment
 For this assignment, you will
 need to make sure the following is in place
 
-1. You have a Khoury Account Setup 
-   * [Apply](https://my.khoury.northeastern.edu/account/apply) and 
-   * Test your [profile](https://my.khoury.northeastern.edu/session/login)
-2. Have your Github.com Account Setup ([Instructions](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account))
+
+1. Have your Github.com Account Setup ([Instructions](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account))
    * Free account is fine
    * We recommend a professional email that is not tied to a school, so your account exists after you graduate.
-3. If you haven't already, in your canvas shell you will be provided with a Github classroom link that will
+2. If you haven't already, in your canvas shell you will be provided with a Github classroom link that will 
 let you use this repository as a template for your work. 
 
 You will also need *git* installed ideally on your local system. If you are using a Windows system, you will need to install [Git Bash](https://git-scm.com/downloads). If you are using a Mac or Linux system, you should already have git installed.
@@ -29,26 +27,8 @@ See resources for into on Git Commit
 
 **NOTICE**: All assignments will need to have _at least_ three commits to earn full points. Most assignments will have many more than that (this is the only one who reaching three may be limited).
 
-## Part 1 - SSH 
-👉🏽 **Task**  👈🏽:  SSH into the Khoury servers, and (optionally) setup your public/private keys for future use.  You will take a screenshot and submit that screenshot as proof of completion. 
 
-1. You will want to use SSH from your local computer to log into Khoury servers. 
-   1. For mac and linux it is already built in
-   2. For windows it depends on your version, however for 10 and 11 it is built into windows via OpenSSH
-2. (optional) After logging in once, you will want to use the resources below to setup your **ssh keys**. 
-   1. While optional it is highly recommended to make your workflow easier
-3. Once Logged into the khoury linux servers, type `pwd` and hit return.
-   * `pwd` is a linux command that shows you the absolute path of your current (present) working directory
-   ![SSH Login Example]
-4. Create a directory for storing your assignments. For example: `cs5008`
-5. Take a screenshot, and save it as `ssh_login_lastname.png` where *lastname* is your last name.
-   * Important❗ This screenshot will be stored in your git repository (see below), but for now, store it locally on your computer to copy later.
-
-> Besides showing you can SSH into the khoury servers, you are not *required* to work on the servers. We just like to make sure you know how to connect to them incase your  local environment is not working. 
-
-
-
-## Part 2 - Terminal?
+## Part 1 - Terminal
 
 👉🏽 **Task** 👈🏽: Take a screenshot that you have correctly cloned the git repository for this assignment.
 
@@ -71,13 +51,15 @@ After it is cloned, take a screen shot of your terminal, and save it as `termina
 
 > You can also do this on the Khoury servers, but in order to get git working, you will need to setup a Personal Access Token (PAT) for your Github account. Here is a [example](https://github.com/CS5008-khoury-lionelle/Resources/blob/main/pat_guide.md).
 
-:star: HINT :star: The first time using Git, you will have to setup your email and name. You can do this by typing `git config --global user.email "your_email"` and `git config --global user.name "your_name"`.
+:star: HINT :star:  
+The first time using Git, you will have to setup your email and name. You can do this by typing `git config --global user.email "your_email"` and `git config --global user.name "your_name"`.
 
 ### :star: Using and IDE :star: 
 If you are using an IDE, such as VS Code or CLion, git is built into the applications, and we recommend going to 'new project from version control' and using the link to your repository. The name may change based on your IDE, but the functionality is the same. Feel free to ask in the general chat in MS Teams and students can help each other out pointing to the correct spot based on their IDE + OS. 
 
+If you used the IDE to clone, most of them give access to the command line, so use the `ls` command to show that everything is still there.
 
-## Part 3 - Your First C Application
+## Part 2 - Your First C Application
 You will want to get C running on your system for the next part of this assignment. Here is a quick [reference](https://github.com/CS5008-khoury-lionelle/Resources/blob/main/InstallC.md) for various options. You can also do all this work on the Khoury servers via the terminal. 
 
 👉🏽 **Task** 👈🏽: Fix [main.c](../main.c)
@@ -85,7 +67,7 @@ You will want to get C running on your system for the next part of this assignme
 1. Open the file `main.c` in your IDE or text editor.
 2. Read through the documented code. *You **DO NOT** have to know C to complete this assignment*. Instead, you should use what you know about programming languages in general to get an idea of what the code is doing. We will cover C in the next module. 
 3. Compile `main.c`. Make sure you are using the `-Wall` flag. 
-   * For most people the command will be `clang -Wall main.c -o main.out`
+   * For most people the command will be `gcc -Wall main.c -o main.out`
    * If you do that, you can then run the program by typing `./main.out` in the terminal. 
 
 > Your environment may modify the compile command a bit (for example Clion using cmakefiles.txt). If you are having trouble, ask in the general chat in MS Teams and students can help each other out. You will want to make sure you are using clang or gcc, and not the MSVC compiler (which is the default for Windows).
@@ -119,11 +101,11 @@ Goodbye Jane
 The errors in the code are similar to ones you can find in python or java. They are string issues or return statement issues. You also have examples throughout the code on how to do it correctly.  More importantly, as programmers making associations between languages becomes second nature to us. For many, your first job may be using a language you never programmed before, and you will be expected to pick up the language quickly. In the end, it is just a tool, and we use the best tool for the job. In this course, we use C, so you better understand what is going on 'under the hood' that many higher level languages hide.
 
 ### :star: REMINDER :star:
-Make sure to commit between each change! For example, you fix spaces, you do a git commit -m'fixed spaces in strings'. Then you fix the return statement, you do a git commit -m'fixed return statement in (func name)'. Then you fix the logic, you do a git commit -m'fixed logic in (location)'.
+Make sure to commit between each change! For example, you fix spaces, you do a git commit -m'fixed spaces in strings'. Then you fix the return statement, you do a `git commit -m'fixed return statement in (func name)'`. Then you fix the logic, you do a `git commit -m'fixed logic in (location)'`.
 
 
-## Part 4: README.md questions
-You will notice there are questions in your readme.md file. You will want to answer these questions in the readme.md file. For this course, we will be doing a lot with Readme.md files, so it is important to get used to them. You may even want to review the [Markdown Guide](https://guides.github.com/features/mastering-markdown/) to get a better understanding of how to format your readme.md file.
+## Part 3: README.md questions
+You will notice there are questions in your [readme.md](../README.md) file. You will want to answer these questions. For this course, we will be doing a lot with README.md files, so it is important to get used to them. You may even want to review the [Markdown Guide](https://guides.github.com/features/mastering-markdown/) to get a better understanding of how to format your readme.md file.
 
 Every assignment will have questions in your README.md, so make sure you review them!
 
@@ -141,7 +123,6 @@ On Gradescope, select that you want to submit your code via Github, and connect 
 3. Meets  (AG)
    * Harder logic errors are fixed (free, logic)
 4. Exceeds  (MG)
-   * Screenshot of logging into the Khoury Servers 
    * Screenshot of Git cloned repository
    * At least 3 commits
    * README.md questions answered correctly
